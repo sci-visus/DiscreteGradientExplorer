@@ -1,0 +1,35 @@
+ 't':draw_mt = ! draw_mt;
+ 'y':  bsn->dumpBasinSizes(tmpname, glivingcounter);
+ 'h':  gusecutoffhack = ! gusecutoffhack;
+ '1':  glivingcounter = bsn->getDestrCount(0.0f);
+ '2':  glivingcounter = bsn->getDestrCount(0.001f);
+ '3':  glivingcounter = bsn->getDestrCount(0.005f);
+ '4':  glivingcounter = bsn->getDestrCount(0.01f);
+ '5':  glivingcounter = bsn->getDestrCount(0.05f);
+ '6':  glivingcounter = bsn->getDestrCount(0.1f);
+ '7':  glivingcounter = bsn->getDestrCount(0.2f);
+ '8':  glivingcounter = bsn->getDestrCount(0.5f);
+ '9':  glivingcounter = bsn->getDestrCount(1.0f);
+ 'c':  drawbasincolor = !drawbasincolor;
+ 'j':  glivingcounter--;
+ 'k':  glivingcounter++;
+ 'b':  clearcolor = !clearcolor;
+ 'm':  1000 more assignments
+ 'n':  10 less assignments
+ 'M':  1 more assignemnts
+ 'N':  1 less assignment
+ 's':  DONT DO THIS WILL MAKE ANIMATION
+ '[':  line_width *= 1.2f;
+ ']':  line_width /= 1.2f;
+ 'e':  draw_edges = !draw_edges;
+ 'F':  flat_funct = !flat_funct;
+ 'f':  draw_flat = !draw_flat;
+ 'g':  draw_gradient = !draw_gradient;
+ '(':  arrow_width *= 1.2f;
+ ')':  arrow_width /= 1.2f;
+ 'x':  ballsize *= 1.2f;
+ 'z':  ballsize /= 1.2f;
+ 'w':  outputimage(filename);
+ 'd':  render_view();
+ 'r':  reset_view();
+ 'q':  exit(1);

@@ -1,0 +1,24 @@
+
+
+Start tinyterrain.bat
+
+left click to rotate, right to zoom, middle to pan. 
+
+Press 'c' to color by height value. 
+
+rotate and zoom to give a sense of the function - emphasize it is a 2d domain with height function (both visualized with color and z coordinate)
+
+the color visualization is currently linear interpolation. we can see what the "discrete" equivalent is (assigning highest vertex value) by pressing 'F' 
+
+to further convey the discrete function, we can press 'f' to move the z-coordinates of each cell to that of the highest vertex. here each patch now shows the "lower star" of a vertex. rotate and zoom to get the full effect. 
+
+now we are going to do a filtration. add vertices ordered by height, then add their lower stars. cells are added in pairs. hold down 'M' to see a flood fill, adding a pair (or critical cell at a time). "N" will go back by one pair. the best effect is achieved by looking at the terrain from the top. use 'n' to skip back 10 pairs, or 'm' to skip forward 1000. can talk about the number of components in this, the number of cycles, etc. 
+
+now do it again, but first press 'g' to show discrete gradient arrows. these point in the direction of anti-collapse. can pause right before/after minima, saddles, maxima.
+
+skip to the end with 'm' now you see the full discrete gradient. critical cells are red. the v-paths ending at saddles are blue. useful to press 'f' to bring back to a normal mesh look. 
+
+now we can draw teh basin color by pressing '1' and then 'c'. here, '1' sets the persistence simplificaiton to 0. we can simplify (merge basins), unsimplify wiht 'k' and 'j' 
+
+
+finally, we can show the discrete merge tree also with 't' although this visualization honestly sucks, and is not linked with the simplificaiton. 
