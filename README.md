@@ -1,6 +1,6 @@
 # DiscreteGradientViewer
 
-![Visualize construction of discrete gradient](sample.png)
+![Visualize construction of discrete gradient](example.PNG)
 
 ## Overview
 
