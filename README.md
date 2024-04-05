@@ -1,5 +1,7 @@
 # DiscreteGradientViewer
 
+![Visualize construction of discrete gradient](sample.png)
+
 ## Overview
 
 DiscreteGradientViewer is a tool designed to facilitate the visualization of Foreman's style of discrete Morse gradient fields. This tool enables users to visually inspect and analyze the construction of discrete gradient fields, aiding in understanding and exploring various discrete Morse theory concepts.
@@ -30,7 +32,7 @@ DiscreteGradientViewer uses CMake for building the project. Follow these steps t
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/DiscreteGradientViewer.git
+   git clone https://github.com/sci-visus/DiscreteGradientExplorer.git
    ```
 
 2. Navigate to the project directory:
@@ -56,13 +58,23 @@ DiscreteGradientViewer uses CMake for building the project. Follow these steps t
 
 ## Usage
 
-After successfully building the project, you can run DiscreteGradientViewer from the command line. Here's how to use it:
+After successfully building the project, you can run the `umsc` tool from the command line. Here's how to use it:
 
 ```bash
-./umsc <data.off> 1
+./umsc input_mesh.off [optional_scaling_value]
 ```
 
-Upon running the tool, you'll be presented with a window displaying the visualization of the mesh. Use mouse and keyboard inputs to navigate and interact with the visualization as needed. Refer to Instructions.txt, and Sequence.txt for keyboard and mouse commands. 
+- `input_mesh.off`: Replace this with the path to your desired input mesh file in .off format. The z-coordinate of the mesh is treated as the scalar value.
+
+- `[optional_scaling_value]`: An optional scaling value that you can provide to multiply the z-coordinate scalar values by. This helps in adjusting the visualization scale as needed.
+
+Upon running the tool, you'll be presented with a window displaying the visualization of the discrete gradient fields. To understand how to navigate and interact with the visualization, please refer to the following files:
+
+- **Instructions.txt**: This file provides a detailed guide on using mouse and keyboard commands to navigate the visualization and control various aspects of the display.
+
+- **Sequence.txt**: Explore this file to understand how the discrete gradient construction unfolds within the context of a lower-stars filtration of the input mesh. It provides insights into the steps involved in the construction process and helps in visualizing the discrete gradient field's evolution.
+
+Feel free to experiment with different commands and explore the visualization to gain a deeper understanding of the discrete gradient construction process. Adjust the optional scaling value as needed to optimize the visualization according to your preferences.
 
 ## Contributing
 
