@@ -10,8 +10,17 @@
 #include "mergeTree.h"
 
 
+#ifdef __APPLE__
+    #include "TargetConditionals.h"
+    #ifdef TARGET_OS_MAC
+        #include <GLUT/glut.h>
+        #include <OpenGL/OpenGL.h>
+    #endif
+#elif defined _WIN32 || defined _WIN64
+    #include <GL\glut.h>
+#endif 
+
 #include <stdio.h>
-#include <GL/glut.h>
 #include "Matrix4.h"
 //#include "CImg.h"
 
